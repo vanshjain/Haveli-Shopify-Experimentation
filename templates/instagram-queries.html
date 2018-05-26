@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+
+<script>
+
+	var url = window.location.hash.substr(1);
+	var regex = /=(.*)/ ;
+	var access_token = url.match(regex)[1];
+	
+
+	document.write(access_token + " access token is ");
+
+</script>
+
+</body>
+</html>
